@@ -1,0 +1,10 @@
+#include <iostream>
+#include <unistd.h>
+using namespace std;
+int main(){
+	cout<<sysconf(_SC_OPEN_MAX)<<endl;	
+	cout<<sysconf(_SC_CHILD_MAX)<<endl;	
+	cout<<sysconf(_SC_CLK_TCK)<<endl;	
+	cout<<pathconf("/",_PC_PATH_MAX)<<endl;	
+	cout<<pathconf("/",_PC_NAME_MAX)<<endl;	
+}
